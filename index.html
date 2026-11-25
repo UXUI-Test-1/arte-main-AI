@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arte 라이브러리</title>
+  <style>
+    @font-face { font-family: 'Pretendard GOV'; font-weight: 400; src: url('./assets/fonts/PretendardGOV-Regular.otf'); }
+    @font-face { font-family: 'Pretendard GOV'; font-weight: 500; src: url('./assets/fonts/PretendardGOV-Medium.otf'); }
+    @font-face { font-family: 'Pretendard GOV'; font-weight: 600; src: url('./assets/fonts/PretendardGOV-SemiBold.otf'); }
+    @font-face { font-family: 'Pretendard GOV'; font-weight: 700; src: url('./assets/fonts/PretendardGOV-Bold.otf'); }
+    @font-face { font-family: 'Pretendard GOV'; font-weight: 800; src: url('./assets/fonts/PretendardGOV-ExtraBold.otf'); }
+    html, body { margin: 0; background: #fff; }
+    body { font-family: 'Pretendard GOV', sans-serif; -webkit-font-smoothing: antialiased; }
+    * { box-sizing: border-box; }
+    input.q::placeholder { color: #8a94a6; opacity: .5; }
+    .sbtn { transition: transform .15s ease; }
+    .sbtn:hover { transform: scale(1.05); }
+    .sbtn:active { transform: scale(.92); }
+    .chip { transition: transform .15s ease, opacity .15s ease; }
+    .chip:hover { transform: translateY(-2px); }
+    .card img { transition: transform .5s ease; }
+    .card:hover img { transform: scale(1.04); }
+    .ktab:hover { background: #f4f7fa; }
+    .more:hover { opacity: .6; }
+    .mlink { font-size: 20px; font-weight: 500; line-height: 1.6; letter-spacing: -0.4px; color: #555; }
+    .mlink.on, .mlink:hover { font-size: 18px; font-weight: 600; line-height: 1.5; letter-spacing: -0.36px; color: #0078d7; text-decoration: underline; text-underline-position: from-font; }
+    .mcol:has(.mlink:hover) .mlink.on:not(:hover) { font-size: 20px; font-weight: 500; line-height: 1.6; letter-spacing: -0.4px; color: #555; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="./bundle.js"></script>
+</body>
+</html>
