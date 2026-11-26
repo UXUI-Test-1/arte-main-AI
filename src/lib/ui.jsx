@@ -1,6 +1,7 @@
 import React from 'react';
 
 export const FONT = "'Pretendard GOV', sans-serif";
+export const PAPER = "'Paperlogy', 'Pretendard GOV', sans-serif";
 export const ACCENT = '#007ade';
 export const TEXT = '#000';
 export const EASE = 'cubic-bezier(.65,0,.35,1)';

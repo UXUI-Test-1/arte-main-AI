@@ -1,5 +1,5 @@
 import React from 'react';
-import {Icon, img} from '../lib/ui.jsx';
+import {Icon, img, PAPER} from '../lib/ui.jsx';
 
 const BLACK = '#000';
 const TERTIARY = '#999';
@@ -8,7 +8,7 @@ const DARK = '#1e2124';
 
 const Head = ({title, plus = true}) => (
   <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 16, paddingBottom: 20, borderBottom: '4px solid #000', flex: 'none'}}>
-    <div style={{fontSize: 62, fontWeight: 600, letterSpacing: -2.48, lineHeight: 1, whiteSpace: 'nowrap'}}>{title}</div>
+    <div style={{fontFamily: PAPER, fontSize: 62, fontWeight: 600, letterSpacing: -2.48, lineHeight: 1, whiteSpace: 'nowrap'}}>{title}</div>
     {plus && <Icon n="add.svg" w={40} />}
   </div>
 );

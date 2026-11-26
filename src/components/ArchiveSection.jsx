@@ -1,5 +1,5 @@
 import React from 'react';
-import {Icon, img} from '../lib/ui.jsx';
+import {Icon, img, PAPER} from '../lib/ui.jsx';
 
 const ARCH = [
   ['t1.png', 340, 448, '연차보고서', '2023 제주문화예술교육사업 운영 결과보고서'],
@@ -11,7 +11,7 @@ const ARCH = [
 export const ArchiveSection = () => (
   <div style={{width: 1920, boxSizing: 'border-box', padding: '60px 0 120px', overflow: 'hidden'}}>
     <div style={{width: 1600, margin: '0 160px', display: 'flex', justifyContent: 'space-between', paddingBottom: 20, borderBottom: '4px solid #000'}}>
-      <div style={{fontSize: 62, fontWeight: 600, letterSpacing: -2.48, lineHeight: 1}}>아카이브</div>
+      <div style={{fontFamily: PAPER, fontSize: 62, fontWeight: 600, letterSpacing: -2.48, lineHeight: 1}}>아카이브</div>
       <Icon n="add.svg" w={40} />
     </div>
     <div style={{display: 'flex', gap: 30, padding: '40px 0 0 160px'}}>

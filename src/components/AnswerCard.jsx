@@ -141,18 +141,21 @@ const ResultContent = ({f = 0}) => {
   const hl = '예술강사는 해당분야의 전문성을 보유한 전문 인력으로서 학교 현장에 파견되는 것이므로 학교 담당 교사의 교육전문성과 예술강사의 예술전문성';
   const tail = '이 예술강사는 해당분야의 전문성을 보유한 전문 인력으로서 학교 현장에 파견되는 것이므로 학교 담당 교사의 교육전문성과 예술강사의 예술전문성이…';
   return (
-    <div style={{display: 'flex', flexDirection: 'column', gap: 60, width: 1484}}>
+    <div style={{display: 'flex', flexDirection: 'column', gap: 40, width: 1484}}>
       <div style={{display: 'flex', flexDirection: 'column', gap: 24}}>
         <div style={{display: 'flex', alignItems: 'center', gap: 14, visibility: 'hidden'}}>
           <Icon n="sparkle.svg" w={36} />
           <div style={{...gradText(f), fontSize: 34, fontWeight: 700, whiteSpace: 'nowrap', lineHeight: 'normal'}}>AI 검색 결과</div>
         </div>
-        <div style={{fontSize: 26, fontWeight: 400, lineHeight: 1.65, color: TEXT, wordBreak: 'keep-all'}}>
-          한국의 예술강사는 <b style={{color: ACCENT, fontWeight: 700}}>「문화예술교육 지원법」</b>에 근거해{' '}
-          <b style={{color: ACCENT, fontWeight: 700}}>‘학교 예술강사 지원사업’</b> 등 국가 정책을 실현하는 전문 교육 주체입니다. 공교육과 예술현장을 유기적으로 연결해 학생의 창의·문화 감수성을 함양하는 공교육 보완자이자, 국민의 보편적 문화 향유 권리를 보장하는 국가 정책 이행자 역할을 수행합니다.
+        <div style={{fontSize: 21, fontWeight: 400, lineHeight: 1.55, color: TEXT, wordBreak: 'keep-all'}}>
+          <div>
+            한국의 예술강사는 <b style={{color: ACCENT, fontWeight: 700}}>「문화예술교육 지원법」</b>에 근거해{' '}
+            <b style={{color: ACCENT, fontWeight: 700}}>‘학교 예술강사 지원사업’</b> 등 국가 정책을 실현하는 전문 교육 주체입니다.
+          </div>
+          <div>공교육과 예술현장을 유기적으로 연결해 학생의 창의·문화 감수성을 함양하는 공교육 보완자이자, 국민의 보편적 문화 향유 권리를 보장하는 국가 정책 이행자 역할을 수행합니다.</div>
         </div>
       </div>
-      <div style={{display: 'flex', flexDirection: 'column', gap: 60}}>
+      <div style={{display: 'flex', flexDirection: 'column', gap: 40}}>
         <div style={{height: 1, background: '#d9d9d9'}} />
         <div style={{display: 'flex', flexDirection: 'column', gap: 32}}>
           <Txt size={26} weight={700} color={TEXT}>관련 자료</Txt>

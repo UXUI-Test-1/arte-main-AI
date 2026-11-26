@@ -64,7 +64,7 @@ export const App = () => {
             <div style={{paddingTop: 80, display: 'flex', flexDirection: 'column', gap: 24}}>
               <div style={{display: 'flex', alignItems: 'center', gap: 10}}>
                 <Icon n="sparkle.svg" w={30} />
-                <Txt size={26} weight={700} color={ACCENT}>arte AI 사서</Txt>
+                <Txt size={26} weight={700} color={ACCENT}>하나씩 쌓여 완성되는 우리의 문화예술교육 아카이브</Txt>
               </div>
               <HeroTitle />
               <div style={{height: 16}} />
