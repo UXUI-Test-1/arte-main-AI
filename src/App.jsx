@@ -8,6 +8,7 @@ import {SuggestChip} from './components/SuggestChip.jsx';
 import {AnswerCard} from './components/AnswerCard.jsx';
 import {KeywordResults} from './components/KeywordResults.jsx';
 import {ArchiveSection} from './components/ArchiveSection.jsx';
+import {MainSections} from './components/MainSections.jsx';
 import {StickyGnb} from './components/StickyGnb.jsx';
 
 const CHIPS = ['요즘 가장 인기있는 문화예술교육을 알려줘', '최근 3년간 문화예술교육 트렌드를 요약해줘', '초등학생 대상 국악 수업 자료 찾아줘'];
@@ -101,6 +102,7 @@ export const App = () => {
         {/* 메인 아카이브 */}
         <Collapse open={main}>
           <ArchiveSection />
+          <MainSections />
         </Collapse>
       </div>
 

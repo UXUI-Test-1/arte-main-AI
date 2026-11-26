@@ -1,0 +1,26 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="780" height="204" viewBox="0 0 780 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="img" clip-path="url(#clip0_0_8)">
+<rect width="780" height="204" fill="#1E2124"/>
+<rect id="Background" x="618" y="140" width="64" height="64" fill="#FF2268"/>
+<path id="Union" d="M542 210V274H408V210H542Z" fill="#FF2268"/>
+<path id="Union_2" d="M752 210H822V274H618V210H688V140H752V210Z" fill="#007ADE"/>
+<path id="Union_3" d="M822 204H758V134H618V70H822V204Z" fill="#FFD006"/>
+<rect id="Background_2" x="548" y="210" width="64" height="64" fill="#01A44B"/>
+<path id="Union_4" d="M262 70V134H-12V70H262Z" fill="#FF2268"/>
+<path id="Union_5" d="M402 70V140H472V204H338V134H268V70H402Z" fill="#007ADE"/>
+<path id="Union_6" d="M822 0V64H688V0H822Z" fill="#FF2268"/>
+<path id="Union_7" d="M332 64H268V-70H402V-6H332V64Z" fill="#FFD006"/>
+<rect id="Background_3" x="198" y="-70" width="64" height="64" fill="#007ADE"/>
+<path id="Subtract" d="M262 274H128V204H192V140H262V274Z" fill="#007ADE"/>
+<path id="Union_8" d="M752 -70V-6H548V-70H752Z" fill="#007ADE"/>
+<rect id="Background_4" x="128" width="134" height="64" fill="#01A44B"/>
+<rect id="Background_5" x="-12" y="-6" width="64" height="70" fill="#01A44B"/>
+<rect id="Background_6" x="-12" y="-70" width="64" height="64" fill="#01A44B"/>
+<path id="Union_9" d="M612 134H478V64H408V0H612V134Z" fill="#FF2268"/>
+</g>
+<defs>
+<clipPath id="clip0_0_8">
+<rect width="780" height="204" fill="white"/>
+</clipPath>
+</defs>
+</svg>
