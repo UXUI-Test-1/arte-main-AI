@@ -67,6 +67,9 @@ const LoadingContent = ({f}) => (
         </div>
       ))}
     </div>
+    <div style={{fontSize: 18, fontWeight: 400, lineHeight: 'normal', letterSpacing: -0.36, color: '#808c9e', whiteSpace: 'nowrap'}}>
+      보통 5~10초 정도 걸려요. 그동안 아래 키워드 검색 결과를 먼저 확인해 보세요.
+    </div>
   </div>
 );
 
