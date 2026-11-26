@@ -35,7 +35,7 @@ const Skel = ({f, w, h, r, style}) => (
 const LoadingContent = ({f}) => (
   <div style={{display: 'flex', flexDirection: 'column', gap: 32, width: 1484}}>
     <div style={{display: 'flex', flexDirection: 'column', gap: 16}}>
-      <div style={{display: 'flex', alignItems: 'center', gap: 14}}>
+      <div style={{display: 'flex', alignItems: 'center', gap: 14, visibility: 'hidden'}}>
         <Icon n="sparkle.svg" w={36} />
         <div style={{...gradText(f), fontSize: 34, fontWeight: 700, whiteSpace: 'nowrap', lineHeight: 'normal'}}>AI 검색 결과</div>
         <Dots f={f} />
@@ -143,7 +143,7 @@ const ResultContent = ({f = 0}) => {
   return (
     <div style={{display: 'flex', flexDirection: 'column', gap: 60, width: 1484}}>
       <div style={{display: 'flex', flexDirection: 'column', gap: 24}}>
-        <div style={{display: 'flex', alignItems: 'center', gap: 14}}>
+        <div style={{display: 'flex', alignItems: 'center', gap: 14, visibility: 'hidden'}}>
           <Icon n="sparkle.svg" w={36} />
           <div style={{...gradText(f), fontSize: 34, fontWeight: 700, whiteSpace: 'nowrap', lineHeight: 'normal'}}>AI 검색 결과</div>
         </div>
@@ -239,6 +239,11 @@ export const AnswerCard = ({phase}) => {
         <div ref={resRef} style={{position: 'absolute', left: 56, top: 48, width: 1484, opacity: result ? 1 : 0, transition: result ? 'opacity .5s ease .3s' : 'opacity .2s ease', pointerEvents: result ? 'auto' : 'none'}}>
           <LiveResult />
         </div>
+      </div>
+      <div style={{position: 'absolute', left: 56, top: 48, display: 'flex', alignItems: 'center', gap: 14, zIndex: 2}}>
+        <Icon n="sparkle.svg" w={36} />
+        <div style={{...gradText(f), fontSize: 34, fontWeight: 700, whiteSpace: 'nowrap', lineHeight: 'normal'}}>AI 검색 결과</div>
+        <div style={{opacity: result ? 0 : 1, transition: 'opacity .3s ease'}}><Dots f={f} /></div>
       </div>
       <BetaBadge f={f} border={3} padding="6px 20.4px" size={24} ls={0.48} style={{left: 58, top: -24, zIndex: 3}} />
     </div>
