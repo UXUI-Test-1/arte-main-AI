@@ -31,30 +31,18 @@ export const Header = () => (
         <Icon n="logo2.svg" w={143.773} h={30.737} />
       </div>
       <div style={{flex: 1}} />
-      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 14}}>
-        <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
-          <div style={{display: 'flex', alignItems: 'center', gap: 6}}>
-            <Txt size={14} weight={400}>한국문화예술교육진흥원</Txt>
-            <Icon n="ext.svg" w={16} />
-          </div>
-          <div style={{width: 1, height: 14, background: '#cdd1d5'}} />
-          <div style={{display: 'flex', alignItems: 'center', gap: 6}}>
-            <Icon n="view.svg" w={16} />
-            <Txt size={14} weight={400}>글자·화면 설정</Txt>
-          </div>
-        </div>
-        <div style={{display: 'flex', alignItems: 'center', gap: 20}}>
-          {[
-            ['isearch.svg', '통합검색'],
-            ['login.svg', '로그인'],
-            ['join.svg', '회원가입'],
-            ['menu.svg', '전체메뉴'],
-          ].map(([ic, t]) => (
-            <div key={t} style={{display: 'flex', alignItems: 'center', gap: 6}}>
-              <Icon n={ic} w={20} />
-              <Txt size={16} weight={700}>{t}</Txt>
-            </div>
+      <div style={{display: 'flex', alignItems: 'center', gap: 32}}>
+        <div style={{background: '#eef2f7', borderRadius: 999, padding: '10px 16px', display: 'flex', alignItems: 'center', gap: 8}}>
+          {['로그인', '회원가입', '화면설정'].map((t, i) => (
+            <React.Fragment key={t}>
+              {i > 0 && <div style={{width: 1, height: 10, background: '#000'}} />}
+              <Txt size={14} weight={500} color="#000" ls={-0.28} lh={1.5}>{t}</Txt>
+            </React.Fragment>
           ))}
+        </div>
+        <div style={{display: 'flex', alignItems: 'center', gap: 10}}>
+          <Icon n="hd_search.svg" w={30} h={30} />
+          <Icon n="hd_menu.svg" w={30} h={30} />
         </div>
       </div>
     </div>
