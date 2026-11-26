@@ -17,6 +17,7 @@ export const SearchBox = ({value, setValue, onSubmit, showBeta, inputRef}) => {
         padding="5px 17px"
         size={20}
         ls={0.4}
+        fixed
         style={{left: 39, top: -23, zIndex: 3, opacity: showBeta ? 1 : 0, transition: 'opacity .35s ease', pointerEvents: 'none'}}
       />
       <form
